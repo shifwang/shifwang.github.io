@@ -1,17 +1,28 @@
-Hello World
-<div id="starBox">
-  <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <p class="scoreBox">
-      <span class="score" id="score">0.</span><em>0</em>
-      <span class="count">A test</span>
-    </p>
-    <p class="rateTxt" id="rateTxt">
-      what??
-    </p>
-  </ul>
-  </div>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script type="text/javascript">
+      function allowDrop(ev)
+      {
+      ev.preventDefault();
+      }
+
+      function drag(ev)
+      {
+      ev.dataTrasnfer.setData("Text",ev.target.id);
+      }
+
+      function drop(ev)
+      {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("Text");
+      ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="div1" ondrop="drop(event)"
+	 ondragover="allowDrop(event)"></div>
+    <img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)"  width="336" height="69" />
+  </body>
+  </html>
