@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Sparse optmization theory literature review"
+date: 2016-10-20
+---
+
+Donoho paper: Minimax risk over Lp-balls for Lq-error, Take the design matrix to be orthogonal, how's the performance?
+
+dantzig selector: for sparse beta, and near orthogonal matrix, how's the performance?
