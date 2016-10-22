@@ -1,4 +1,5 @@
-nav ul {
+/*####### Navigation bar class = ul.nav ######*/
+ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -7,11 +8,11 @@ nav ul {
     background-color: #f3f3f3;
 }
 
-nav ul li {
+ul.nav li {
     float: left;
 }
 
-nav li a {
+ul.nav li a {
     display: block;
     color: #666;
     text-align: center;
@@ -19,11 +20,11 @@ nav li a {
     text-decoration: none;
 }
 
-nav ul li a:hover:not(.active) {
+ul.nav li a:hover:not(.active) {
     background-color: #ddd;
 }
 
-nav ul li a.active {
+ul.nav li a.active {
     color: white;
     background-color: #4CAF50;
 }
